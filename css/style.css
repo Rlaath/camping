@@ -16,3 +16,17 @@ a{
   text-decoration: none;
   color: black;
 }
+
+button,
+button:active,
+button:focus{
+  border: none;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+button{
+  background-color: inherit;
+}
