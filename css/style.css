@@ -5,7 +5,7 @@
 @import "components/main-header.css";
 
 /*screen*/
-
+@import "screen/footer.css";
 
 body{
   font-family: 'Noto Sans KR', sans-serif;
