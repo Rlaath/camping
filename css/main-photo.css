@@ -1,0 +1,114 @@
+.main-photo{
+display: flex;
+justify-content: center;
+
+}
+.slider{
+  margin: auto;
+  margin-top: 120px;
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 1s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+/* css for manual slide navagation */
+
+.navagation-manual{
+position: absolute;
+width: 800px;
+margin-top:-40px;
+display: flex;
+justify-content: center;
+
+}
+
+.manual-btn{
+  border: 2px solid #86e28c;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+
+.manual-btn:hover{
+  background: #86e28c;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+
+/* css for automatic slide navagation */
+
+.navagation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navagation-auto div{
+  border: 2px solid #86e28c;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+
+.navagation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navagation-auto .auto-btn1{
+  background: #86e28c;
+}
+#radio2:checked ~ .navagation-auto .auto-btn2{
+  background: #86e28c;
+}
+#radio3:checked ~ .navagation-auto .auto-btn3{
+  background: #86e28c;
+}
+#radio4:checked ~ .navagation-auto .auto-btn4{
+  background: #86e28c;
+}

@@ -4,6 +4,7 @@
   padding: 10px;
   background-color:var(--color-light-blue);
   position: fixed;
+  top: 0;
   width: 100%;
   box-sizing: border-box;
 }
