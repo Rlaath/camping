@@ -1,3 +1,5 @@
+//main photo slider
+
 let counter = 1;
 setInterval(function(){
   document.getElementById('radio' + counter).checked = true;
@@ -5,6 +7,6 @@ setInterval(function(){
   if(counter > 4){
     counter = 1;
   }
-}, 2500);
+}, 3000);
 
 

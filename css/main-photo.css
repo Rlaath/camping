@@ -1,20 +1,31 @@
-.main-photo{
+:root{
+
+  --size-width : 1200px;
+  --size-height : 900px;
+}
+
+
+#main-photo{
 display: flex;
 justify-content: center;
+margin-top: 105px;
+}
 
+.main-text{
+  width: 300px;
+  height: var(--size-height);
+  background: #86e28c;
 }
 .slider{
-  margin: auto;
-  margin-top: 120px;
-  width: 800px;
-  height: 500px;
-  border-radius: 10px;
+
+  width: var(--size-width);
+  height: var(--size-height);
   overflow: hidden;
 }
 
 .slides{
   width: 500%;
-  height: 500px;
+  height: var(--size-height);
   display: flex;
 
 }
@@ -29,16 +40,16 @@ justify-content: center;
 }
 
 .slide img{
-  width: 800px;
-  height: 500px;
+  width: var(--size-width);
+  height: var();
 }
 
 /* css for manual slide navagation */
 
 .navagation-manual{
 position: absolute;
-width: 800px;
-margin-top:-40px;
+width: var(--size-width);
+margin-top:-326px;
 display: flex;
 justify-content: center;
 
@@ -83,9 +94,9 @@ justify-content: center;
 .navagation-auto{
   position: absolute;
   display: flex;
-  width: 800px;
+  width: var(--size-width);
   justify-content: center;
-  margin-top: 460px;
+  margin-top: 573px;
 }
 
 .navagation-auto div{
